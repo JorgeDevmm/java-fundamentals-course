@@ -28,8 +28,7 @@ public class BankAccount {
         }
     }
 
-    @Override
-    public String toString() {
+    public String displayBalance() {
         return "BankAccount{" +
                 "accountHolder='" + accountHolder + '\'' +
                 ", balance=" + balance +
