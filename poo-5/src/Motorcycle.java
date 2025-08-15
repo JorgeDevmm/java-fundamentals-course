@@ -1,9 +1,16 @@
 public class Motorcycle extends Vehicle {
     private boolean hasSidecar;
+    private Engine engine;
 
     public Motorcycle(String brand, String model, int year, boolean hasSidecar) {
         super(brand, model, year);
         this.hasSidecar = hasSidecar;
+        this.engine = new Engine();
+    }
+
+    public void start() {
+        System.out.println("The motorcycle is on");
+        engine.start();
     }
 
     public void popWheelie() {
@@ -18,10 +25,6 @@ public class Motorcycle extends Vehicle {
         this.hasSidecar = hasSidecar;
     }
 
-    @Override
-    public void start() {
-        System.out.println("The motorcycle is on");
-    }
 
     @Override
     public String toString() {

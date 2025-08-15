@@ -14,10 +14,12 @@ public class Main {
 //        System.out.println("The Year is :" + vehicle.getYear());
 
         Vehicle car = new Car("Hiundai", "Tucson", 2011, 4);
-        car.start();
+
+        //Apply cast to access the child class method in Vehicle
+        ((Car) car).start();
 
         //Cast
-        ((Car)car).setDoors(5);
+        ((Car) car).setDoors(5);
 
         printVehicle(car);
 

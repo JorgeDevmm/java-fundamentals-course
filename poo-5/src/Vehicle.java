@@ -10,19 +10,6 @@ public class Vehicle {
         this.year = year;
     }
 
-    public void start() {
-        System.out.println("Vehicle On");
-    }
-
-    public void start(boolean silentMode) {
-        System.out.println("Vehicle On");
-    }
-
-    public void start(int silentMode) {
-        System.out.println("Vehicle On");
-    }
-
-
     public void stop() {
         System.out.println("Vehicle stop");
     }
